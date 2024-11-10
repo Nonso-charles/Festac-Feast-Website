@@ -129,3 +129,70 @@
     .footer-links a:hover {
       text-decoration: underline;
     }
+    
+       .reservation-form {
+      background-color: #f7f7f7;
+      padding: 40px;
+      border-radius: 8px;
+    }
+    .time-slot {
+      font-weight: bold;
+    }
+    .unavailable {
+      color: red;
+      text-decoration: line-through;
+    }
+    
+   /* Image hover effect */
+.img-hover-zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Form field transition */
+.form-control {
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #FF7043;
+    box-shadow: 0 0 5px rgba(255, 112, 67, 0.6);
+}
+
+/* Button hover effect */
+.btn-hover {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-hover:hover {
+    background-color: #FF7043;
+    transform: translateY(-2px);
+}
+
+/* Section style */
+.reservation-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Image styles */
+.happy-customers img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-form .col-md-6 {
+        margin-bottom: 20px;
+    }
+}

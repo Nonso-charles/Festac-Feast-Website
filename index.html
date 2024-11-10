@@ -184,33 +184,83 @@
   </div>
   
   <section class="contact-section text-center">
-    <div class="overlay"></div>
-    <div class="container contact-content">
-        <h2 class="mb-4">We’d Love to Hear From You!</h2>
-        <form class="row justify-content-center g-3">
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Your Email" required>
-            </div>
-            <div class="col-md-12">
-                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-            </div>
-            <div class="col-md-12">
-                <button type="submit" class="btn btn-primary px-5">Send Message</button>
-            </div>
-        </form>
+  <div class="overlay"></div>
+  <div class="container contact-content">
+    <h2 class="mb-4">We’d Love to Hear From You!</h2>
+    <!-- Formspree Integration -->
+    <form action="https://formspree.io/f/xrbgkbry" method="POST" class="row justify-content-center g-3">
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="col-md-12">
+        <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary px-5">Send Message</button>
+      </div>
+    </form>
 
-        <!-- Contact Details -->
-        <div class="mt-5">
-            <p><strong>Contact Number:</strong> +234 123 456 7890</p>
-            <p><strong>Email:</strong> contact@festacfeast.com</p>
-            <p><strong>Address:</strong> 123 Festac Road, Lagos, Nigeria</p>
-        </div>
+    <!-- Contact Details -->
+    <div class="mt-5">
+      <p><strong>Contact Number:</strong> +234 123 456 7890</p>
+      <p><strong>Email:</strong> contact@festacfeast.com</p>
+      <p><strong>Address:</strong> 123 Festac Road, Lagos, Nigeria</p>
     </div>
+  </div>
 </section>
 
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Testimonials -->
+            <div class="col-md-6">
+                <h5>Customer Testimonials</h5>
+                <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>"The food at Festac Feast is beyond amazing! I felt like I was back home enjoying a family meal."</p>
+                            <p class="testimonial-author">- Chinedu A.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"Exceptional service and delicious traditional dishes. I highly recommend the jollof rice special!"</p>
+                            <p class="testimonial-author">- Amina O.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>"Festac Feast brings the true taste of Nigerian cuisine. I love their authentic recipes!"</p>
+                            <p class="testimonial-author">- Tunde K.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side: Quick Links and Contact Info -->
+            <div class="col-md-6">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reservations">Reservations</a></li>
+                </ul>
+                <h5>Contact Info</h5>
+                <p><strong>Phone:</strong> +234 123 456 7890</p>
+                <p><strong>Email:</strong> contact@festacfeast.com</p>
+                <p><strong>Address:</strong> 123 Festac Road, Lagos, Nigeria</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

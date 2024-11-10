@@ -109,3 +109,23 @@
     .form-control, .btn {
       border-radius: 0;
     }
+    
+       .footer-section {
+      background-color: #2E2E2E; /* Dark background for contrast */
+      color: #fff;
+      padding: 40px 0;
+    }
+    .testimonial-carousel .carousel-item {
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .testimonial-author {
+      font-style: italic;
+    }
+    .footer-links a {
+      color: #FF7043; /* Accent color */
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }

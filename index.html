@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Festac Feast</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,10 +30,10 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -52,7 +54,7 @@
 </div>
   </section>
   
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 mb-4 mb-lg-0">
@@ -124,8 +126,95 @@
     </div>
 </section>
 
+<div class="container mt-5" id="menu">
+    <h2 class="text-center mb-4">Our Menu</h2>
+
+    <!-- Filter Dropdown -->
+    <div class="mb-3 text-center">
+      <select class="form-select w-auto d-inline-block" id="dietFilter" aria-label="Filter Menu">
+        <option value="all">All</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="spicy">Spicy</option>
+        <option value="gluten-free">Gluten-Free</option>
+      </select>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="row">
+      <div class="col-md-4 mb-4 menu-item" data-type="vegetarian">
+        <div class="card">
+          <img src="vegetarian-dish.png" class="card-img-top" alt="Vegetarian Dish">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-leaf menu-icon text-success"></i>Vegetarian Dish</h5>
+            <p class="card-text">A delicious, healthy dish made with fresh vegetables.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 menu-item" data-type="spicy">
+        <div class="card">
+          <img src="spicy-dish.png" class="card-img-top" alt="Spicy Dish">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-pepper-hot menu-icon text-danger"></i>Spicy Dish</h5>
+            <p class="card-text">A fiery dish packed with bold flavors and spices.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 menu-item" data-type="gluten-free">
+        <div class="card">
+          <img src="gluten-free-dish.png" class="card-img-top" alt="Gluten-Free Dish">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-check-circle menu-icon text-primary"></i>Gluten-Free Dish</h5>
+            <p class="card-text">A tasty, gluten-free option for those with dietary restrictions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 menu-item" data-type="vegetarian gluten-free">
+        <div class="card">
+          <img src="veg-gluten-free-dish.png" class="card-img-top" alt="Vegetarian Gluten-Free Dish">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-leaf menu-icon text-success"></i><i class="fas fa-check-circle menu-icon text-primary"></i>Vegetarian & Gluten-Free</h5>
+            <p class="card-text">A perfect blend of fresh, gluten-free ingredients and vegetables.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="contact-section text-center">
+    <div class="overlay"></div>
+    <div class="container contact-content">
+        <h2 class="mb-4">We’d Love to Hear From You!</h2>
+        <form class="row justify-content-center g-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="col-md-12">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary px-5">Send Message</button>
+            </div>
+        </form>
+
+        <!-- Contact Details -->
+        <div class="mt-5">
+            <p><strong>Contact Number:</strong> +234 123 456 7890</p>
+            <p><strong>Email:</strong> contact@festacfeast.com</p>
+            <p><strong>Address:</strong> 123 Festac Road, Lagos, Nigeria</p>
+        </div>
+    </div>
+</section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
 </body>
 
 </html>
